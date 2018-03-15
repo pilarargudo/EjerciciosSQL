@@ -33,4 +33,20 @@
 * codigoCliente 
   *Integer 
   *Forgein key clientes(id)
+### LENGUAJE DML
+>1. Utilizando la base de datos Sakila (BD de Pruebas de MySQL)
+Extraer todos los actores de la tabla actors.
+
+>2. De la tabla actors queremos conocer todos los nombres existentes en la tabla sin que se repita para ello utilizaremos DISTINCT.
+
+>3. De la tabla film queemos obtenter una relación de películas que cumplan las siguientes características:
+* rental_duration = 6
+* rental_rate >=2.99
+
+>4. De la tabla film queremos obtener una relación de la peliculas que tengan un replacement_cost entre 15.99 y 22.99
+
+>5.  Queremos Obtener todos los customers mediante el filtro de pertenencia a conjuntos IN que cumpla los siguientes requisitos.
+* Pertenecen al store 1
+* Y su first_name = MARY, o NANCY  o DONNA.
+  
 
