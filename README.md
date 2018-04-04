@@ -33,6 +33,9 @@
 * codigoCliente 
   *Integer 
   *Forgein key clientes(id)
+  
+  ---
+  
 ### LENGUAJE DML
 >1. Utilizando la base de datos Sakila (BD de Pruebas de MySQL)
 Extraer todos los actores de la tabla actors.
@@ -48,5 +51,15 @@ Extraer todos los actores de la tabla actors.
 >5.  Queremos Obtener todos los customers mediante el filtro de pertenencia a conjuntos IN que cumpla los siguientes requisitos.
 * Pertenecen al store 1
 * Y su first_name = MARY, o NANCY  o DONNA.
-  
+ 
+ --- 
 
+### LENGUAJE DCL
+>1. Inserta una nueva película.
+>2. Inserta dos nuevos actores.
+>3. Modifica el apellido de la actriz UMA a THURMAN
+>4. Elimina los dos actores que has creado.
+>5. Comprueba que ocurre si intentamos realizar la siguiente sentencia
+```sql
+delete from customer where customer_id=10;
+```
