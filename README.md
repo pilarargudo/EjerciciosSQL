@@ -51,14 +51,24 @@ Extraer todos los actores de la tabla actors.
 >5.  Queremos Obtener todos los customers mediante el filtro de pertenencia a conjuntos IN que cumpla los siguientes requisitos.
 * Pertenecen al store 1
 * Y su first_name = MARY, o NANCY  o DONNA.
+
+>6. Queremos saber que clientes alquilaron películas para ello debemos utilizar inner join entre las tablas CUSTOMER Y rental
  
+>7. Queremos saber cual es el cliente que más películas a alquilado.
+
+>8. Queremos saber que alquileres están atrasados en su devolución, para ello debemos buscar en la tabla del rental las peliculas con una fecha de regreso = null,  y que la fecha de alquiler supere el tiempo o cantidad  de dias establecidos que puede conservar el cliente la pelicula. Si se cumple esta condición, entonces el cliente esta adeudando la película y se deberá mostrar en el listado el nombre del a pelicula junto con el nombre del cliente, número de teléfono y email. También mostraremos si la película esta paǵada, en que fecha se pago y cuanto se pago.
+
  --- 
 
 ### LENGUAJE DCL
 >1. Inserta una nueva película.
+
 >2. Inserta dos nuevos actores.
+
 >3. Modifica el apellido de la actriz UMA a THURMAN
+
 >4. Elimina los dos actores que has creado.
+
 >5. Comprueba que ocurre si intentamos realizar la siguiente sentencia
 ```sql
 delete from customer where customer_id=10;
